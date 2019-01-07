@@ -1,0 +1,19 @@
+{
+  "name": "TechJournal",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "homepage": "http://arkhangelsk.github.io/TechJournal",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "predeploy": "yarn run docz:build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "devDependencies": {
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
